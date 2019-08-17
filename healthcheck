@@ -9,8 +9,8 @@ function checkENV()
     else
         ps -ef | grep "jar" | grep "adminservice" | grep "${condition}" > /dev/null || exit 1
         echo "The ${condition} admin service is runing."
-        ps -ef | grep "jar" | grep "configservice" | grep "${condition}" > /dev/null || exit 1
-        echo "The ${condition} config service is runing."
+        # ps -ef | grep "jar" | grep "configservice" | grep "${condition}" > /dev/null || exit 1
+        # echo "The ${condition} config service is runing."
     fi
 }
 
